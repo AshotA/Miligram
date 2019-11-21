@@ -1,0 +1,48 @@
+.user {
+    display: grid;
+    grid-template-columns: minmax(290px, 690px) 270px;
+    align-items: center;
+}
+
+.user_info {
+    list-style: none;
+    margin: 25px 0;
+    padding-right: 15px;
+    border-right: 1px solid #d4d4d4;
+}
+
+.user_btn {
+    justify-self: end;
+}
+
+.user_btn button {
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, rgb(202, 0, 81) 0%, rgb(223, 4, 91) 100%);
+    width: 190px;
+    height: 50px;
+    box-shadow: 0 3px 0 0 rgba(148, 0, 59, 0.8);
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+    display: block;
+}
+
+@media (max-width: 680px){
+    .user {
+        grid-template-columns: auto;
+    }
+
+    .user_info {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .user_btn {
+        justify-self: center;
+        margin-bottom: 25px;
+    }
+}
